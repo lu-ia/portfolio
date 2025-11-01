@@ -1,214 +1,370 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LUC.IA</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Poppins', sans-serif; }
-    .hidden-on-load {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .show-on-scroll {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body class="bg-rose-50 text-gray-700">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luc.IA</title>
 
-  <!-- Navbar -->
-  <header class="fixed w-full bg-rose-50 shadow-sm z-50">
-    <nav class="max-w-5xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-rose-500">LUC.IA</h1>
-      <div class="space-x-6 hidden md:block">
-        <a href="#home" class="hover:text-rose-400 transition">Home</a>
-        <a href="#about" class="hover:text-rose-400 transition">About</a>
-        <a href="#projects" class="hover:text-rose-400 transition">Projects</a>
-        <a href="#certificates" class="hover:text-rose-400 transition">Certificates</a>
-        <a href="#languages" class="hover:text-rose-400 transition">Languages</a>
-        <a href="#contact" class="hover:text-rose-400 transition">Contact</a>
-      </div>
+</head>
+<body>
+  <header class="top-nav">
+    <nav aria-label="Navegación principal">
+      <a href="#inicio" class="brand">Luc.IA</a>
+      <button class="hamburger" aria-controls="menu-list" aria-expanded="false" aria-label="Abrir menú">☰</button>
+      <ul id="menu-list" class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mi</a></li>
+        <li><a href="#ubicacion">Ubicacion</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-rose-100 to-rose-50">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4 text-rose-600 hidden-on-load">Hi, I'm <span class="text-rose-400">LUC.IA</span></h2>
-    <p class="text-lg md:text-2xl text-gray-600 mb-4 hidden-on-load">Data Scientist passionate about data, creativity, and innovation</p>
-    <p class="italic text-rose-500 mb-6 hidden-on-load">"Learn. Support. Dream. There is always a way."</p>
-    <a href="#projects" class="bg-rose-400 text-white px-6 py-3 rounded-full shadow hover:bg-rose-500 transition hidden-on-load">See Projects</a>
+  <main>
+    <section class="hero-section" id="inicio">
+    <div class="hero-text-large">
+    <h1>Transformo tu empresa con tecnología</h1>
+    <p class="slogan">Digitalización, innovación y análisis de datos para crecer y destacar</p>
+    <p>Ayudo a digitalizar tu empresa, crear páginas web profesionales, analizar datos y aprovechar la tecnología para transformar tu negocio e innovar en tu sector.</p>
+    </div>
+    </section>
+  </main>
+
+  
+<!-- SECCION DE SERVICIOS-->
+  <section class="services-section" id="servicios">
+    <div class="services-head">
+      <div class="eyebrow">Servicios</div>
+      <div>
+        <h2>Soluciones TI a medida para tu empresa</h2>
+        <p class="intro">Ayudamos a negocios a optimizar su tecnología y mejorar la productividad, con soporte continuo.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <!-- Auditoría y diagnóstico -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 6h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 18h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Creación y modernización del sitio web</h3>
+          <p>Modernizo tu página web, adaptada a tus necesidades y con un toque moderno y cómodo para tus clientes.</p>
+        </div>
+      </article>
+
+      <!-- Procesos -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M9 22v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Agilización de procesos</h3>
+          <p>Análisis de los procesos de la empresa. Digitalización de procesos. Mejora de tiempos.</p>
+        </div>
+      </article>
+
+      <!-- Soporte técnico -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 6v6c0 5 4 10 9 10s9-5 9-10V6l-9-4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Soporte técnico</h3>
+          <p>Ofrezco soporte y soluciones en menos de 24 horas.</p>
+        </div>
+      </article>
+
+      <!-- Desarrollo a medida -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Desarrollo a medida</h3>
+          <p>Aplicaciones y automatizaciones enfocadas en resultados: integración de sistemas, APIs y soluciones web/desktop.</p>
+        </div>
+      </article>
+
+      <!-- Migración a la nube -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 18a4 4 0 0 0 0-8 5 5 0 0 0-9.9 1A3.5 3.5 0 0 0 4 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Migración & Cloud</h3>
+          <p>Planificación y ejecución de migraciones a la nube, optimización de costes y configuración segura.</p>
+        </div>
+      </article>
+
+      <!-- Capacitación -->
+      <article class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Capacitación & Workshops</h3>
+          <p>Formación práctica para equipos: buenas prácticas, seguridad, productividad y adopción de nuevas herramientas.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+    <!-- Logo Slider -->
+  <section class="logo-slider">
+    <div class="logo-track">
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+      <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
+      <div class="logo-slide"><img src="img/bmw.png" alt="BMW"></div>
+      <div class="logo-slide"><img src="img/capgemini.svg" alt="Capgemini"></div>
+      <div class="logo-slide"><img src="img/ossa.jpg" alt="Museo Ossa"></div>
+    </div>
   </section>
 
-<section id="about" class="bg-rose-100 py-20 px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-bold mb-6 text-rose-600 hidden-on-load">About Me</h3>
-    <img src="atardecer.jpg" alt="Profile photo" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-md hidden-on-load" />
-    
-    <ul class="text-gray-700 text-left mb-4 max-w-xl mx-auto list-disc list-inside hidden-on-load">
-      <li>
-        I am a <span class="font-bold text-rose-600">Data Scientist</span> who loves combining 
-        <span class="font-bold text-rose-600">analytical thinking</span> with 
-        <span class="font-bold text-rose-600">creativity</span>.
-      </li>
-      <li>
-        Experienced in <span class="font-bold text-rose-600">Python</span>, 
-        <span class="font-bold text-rose-600">SQL</span>, 
-        <span class="font-bold text-rose-600">Machine Learning</span>, and 
-        <span class="font-bold text-rose-600">storytelling with data</span>.
-      </li>
-      <li>
-        <span class="font-bold text-rose-600">1 year experience</span> in 
-        <span class="font-bold text-rose-600">Automotive Sector</span> in BOSCH.
-      </li>
-      <li>
-        I began my studies in <span class="font-bold text-rose-600">Computer Science</span> in 
-        <span class="font-bold text-rose-600">Spain</span> and ended them in 
-        <span class="font-bold text-rose-600">Germany</span>, where I actually work, using as a basis 
-        <span class="font-bold text-rose-600">English</span> and 
-        <span class="font-bold text-rose-600">German</span>.
-      </li>
-    </ul>
-    
-    <div class="flex justify-center space-x-4 mt-6 flex-wrap gap-2 hidden-on-load">
-      <span class="px-3 py-1 bg-white shadow rounded-full">🐍 Python</span>
-      <span class="px-3 py-1 bg-white shadow rounded-full">📊 SQL</span>
-      <span class="px-3 py-1 bg-white shadow rounded-full">🤖 ML</span>
-      <span class="px-3 py-1 bg-white shadow rounded-full">📈 Data Viz</span>
-    </div>
+  <!-- SECCIÓN DE SOBRE MI -->
+  <main class="page" id="sobre-mi">
+    <article class="card" role="main" aria-labelledby="hero-title">
+      <div class="hero" id="inicio">
+
+        <div class="avatars">
+          <a href="img/lucia.jpg" target="_blank">
+            <img class="avatar large" src="img/lucia.jpg" alt="Chica sonriente" />
+          </a>
+          <a href="img/lift.jpg" target="_blank">
+            <img class="avatar large" src="img/lift.jpg" alt="Niña pequeña" />
+          </a>
+        </div>
+
+        <div class="hero-text">
+          <h1 id="hero-title">Lucía González</h1>
+          <p class="subtitle">Ingeniera informática | Máster en Big Data & IA</p>
+          <p class="description">
+            Más de 2 años de experiencia como consultora de datos en Alemania,
+            trabajando en proyectos con <strong>BMW</strong> y <strong>BOSCH</strong>.
+          </p>
+
+          <div class="qualities">
+            <div class="quality">Experiencia internacional</div>
+            <div class="quality">Visión transformadora</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="side">
+        <h3>Contáctame</h3>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:luciabeltrangonzalez@gmail.com">✉️ luciabeltrangonzalez@gmail.com </a>
+          <a class="contact-item" href="tel:+34 675 580 775">📞 +34 675 580 775</a>
+        </div>
+        <div>
+          <div style="font-size:13px; color:#374151; margin-bottom:8px;">Servicios</div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/lucia-gonzalez1" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="about-block">
+          <h3> <br> Sobre mí</h3>
+          <p>Tengo las cosas claras.  <br>
+            Ayudo a digitalizar tu empresa. <br>
+            Lo hago con alma. <br>
+            Le pongo mi firma. <br>
+            Triunfamos juntos. <br> </p>
+        </div>
+      </aside>
+    </article>
+  </main>
+
+  <!-- SECCIÓN DE PROYECTOS -->  
+<section class="proyectos" id="proyectos">
+  <h2>Proyectos destacados</h2>
+  <div class="proyectos-grid">
+
+    <article class="proyecto-card">
+      <h3>Museo Ossa Utebo</h3>
+      <a href="https://www.ossamuseo.es/" target="_blank" class="proyecto-link">🌐 Ver sitio web</a> <br>
+      
+      <br><p>🖥️ Desarrollo de una web moderna e internacional. <br>
+        🌍 Monitoreo de las visitas de todo el mundo. <br>
+        📩 Gestión de consultas de visitantes mediante correo electrónico. </p>
+      </article>
+
+    <article class="proyecto-card">
+      <h3>Rasmia Equipo</h3>
+      <a href="https://rasmiaequipo.wixsite.com/website" target="_blank" class="proyecto-link">📱 Visitar blog</a> <br>
+      <br><p>✨ Creación de un blog web desde cero. <br>
+        💌 Redacción de artículos.
+      </p>
+      </article>
+
+    <article class="proyecto-card">
+      <h3>YUHUUU Brand</h3>
+       <a href="https://instagram.com/yuhuuu_brand" target="_blank" class="proyecto-link">🌸 Ver instagram</a> <br>
+      <br><p>🎨 Asesoría y diseño web para marca de ropa creativa. <br>
+        📱 Gestión de redes sociales.  <br>
+        🛍️ Creación y gestión de tienda online (ETSY)
+      </p>
+     </article>
+
   </div>
 </section>
 
+  <!-- SECCIÓN DE OPINIONES -->
+  <section class="opiniones" id="opiniones">
+    <h2>Opiniones</h2>
+    <div class="opiniones-grid">
+      
+      <div class="opinion-card">
+        <h3 class="nombre">Gabriel Beltrán</h3>
+        <p class="subtitulo">Propietario</p>
+        <p class="fecha">30 de septiembre de 2025</p>
+        <p class="reseña">
+          ¡Excelente servicio! Lucía hizo la página web de mi empresa. Siempre que quiero añadir o cambiar algo, lo hace con rapidez y claridad.
+          El resultado superó mis expectativas. Además, me sugirió algunas ideas para modernizar y agilizar algunos procesos de mi empresa.
+          Muchas gracias Lucía.
+        </p>
+      </div>
 
+      <div class="opinion-card">
+        <h3 class="nombre">María Peláez</h3>
+        <p class="subtitulo">Jefa de salón de belleza y uñas</p>
+        <p class="fecha">12 de agosto de 2025</p>
+        <p class="reseña">
+          Lucía es muy profesional y trabajadora, a la vez que amable y cercana. 
+          Recomiendo totalmente su trabajo, cumple con los tiempos y ofrece calidad.
+          Me sorprendió su visión innovadora y la cantidad de ideas que tiene para mejorar.
+          Tenemos entre manos (nunca mejor dicho) nuevos proyectos, seguro que cada uno mejor que el anterior...
+        </p>
+      </div>
 
-  <!-- Projects -->
-  <section id="projects" class=class="bg-rose-100 py-20 px-6">
-    <br><br><br><br>
-    <h3 class="text-3xl font-bold mb-10 text-center text-rose-600 hidden-on-load">Projects</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">📊 Airbnb Analysis</h4>
-        <p class="text-gray-600 mb-4">Exploration and visualization of rental data in major cities.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Pandas</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Seaborn</span>
-        </div>
+      <div class="opinion-card">
+        <h3 class="nombre">Lucía</h3>
+        <p class="subtitulo">Creadora de RASMIA EQUIPO</p>
+        <p class="fecha">28 de junio de 2025</p>
+        <p class="reseña">
+          Me ayudó a impulsar mi proyecto desde cero. 
+          También me ayudó con las redes sociales y el sitio web. 
+          Estoy muy agradecida por el apoyo recibido.
+        </p>
       </div>
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">🤖 NLP for Tweets</h4>
-        <p class="text-gray-600 mb-4">Automatic classification of tweets using Natural Language Processing.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">NLTK</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Scikit-learn</span>
-        </div>
-      </div>
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">🔮 Sales Forecasting</h4>
-        <p class="text-gray-600 mb-4">Predictive sales model using time series forecasting techniques.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Prophet</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Pandas</span>
-        </div>
-      </div>
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">📈 Customer Segmentation</h4>
-        <p class="text-gray-600 mb-4">Clustering analysis to identify customer groups and behaviors.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">KMeans</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Matplotlib</span>
-        </div>
-      </div>
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">🌍 Climate Data Dashboard</h4>
-        <p class="text-gray-600 mb-4">Interactive dashboard for visualizing climate and temperature changes.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Plotly</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Dash</span>
-        </div>
-      </div>
-      <div class="p-6 rounded-2xl shadow-md bg-white hover:shadow-xl transition transform hover:-translate-y-1 hidden-on-load">
-        <h4 class="font-bold mb-2 text-rose-500">🛒 Recommendation System</h4>
-        <p class="text-gray-600 mb-4">Product recommendation engine using collaborative filtering.</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Python</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Pandas</span>
-          <span class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-sm">Surprise</span>
-        </div>
-      </div>
-    </div>
-    <br><br><br>
-  </section>
 
-
-
-
-  <!-- Certificates -->
-  <section id="certificates" class="bg-rose-100 py-20 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-bold mb-10 text-center text-rose-600 hidden-on-load">Certificates</h3>
-      <div class="space-y-6">
-        <div class="hidden-on-load">
-          <p class="font-bold text-rose-500">📜 Data Science Specialization – Coursera</p>
-          <p class="text-gray-600">Comprehensive program covering data wrangling, visualization, and machine learning.</p>
-        </div>
-        <div class="hidden-on-load">
-          <p class="font-bold text-rose-500">🤖 Machine Learning – Stanford Online</p>
-          <p class="text-gray-600">Hands-on experience with supervised and unsupervised ML models.</p>
-        </div>
+      <div class="opinion-card">
+        <h3 class="nombre">Christian Korp</h3>
+        <p class="subtitulo">Ingeniero mecánico en BOSCH Alemania</p>
+        <p class="fecha">28 de junio de 2025</p>
+        <p class="reseña">
+          La Sra. Gonzalez se caracteriza por su puntualidad, sentido de responsabilidad y ética de trabajo confiable. 
+          Constantemente abordó sus tareas con dedicación y mostró apertura a nuevos desafíos.
+          Estoy muy agradecido con su trabajo y le deseo mucho éxito en su emprendimiento.
+        </p>
       </div>
+
+      <div class="opinion-card">
+        <h3 class="nombre">Clara</h3>
+        <p class="subtitulo">Co-creadora de YUHUUU BRAND (marca de ropa) </p>
+        <p class="fecha">12 de junio de 2025</p>
+        <p class="reseña">
+            Gracias a Lucía pude orientar mi proyecto.
+            Tenía las ideas dispersas pero ella me ayudó a definirlas con claridad y darles forma.
+            Sin duda una gran decisión!!!!!
+            Muy contenta con nuestro proyecto :)
+        </p>
+      </div>
+
+      <div class="opinion-card">
+        <h3 class="nombre">Inés</h3>
+        <p class="subtitulo">Empresario</p>
+        <p class="fecha">12 de septiembre de 2025</p>
+        <p class="reseña">
+          Muy profesionales. Recomiendo totalmente su trabajo, cumplen tiempos y ofrecen calidad.
+        </p>
+      </div>
+
     </div>
   </section>
 
-  <!-- Languages -->
-  <section id="languages" class="bg-rose-50 max-w-4xl mx-auto py-20 px-6 text-center">
-    <h3 class="text-3xl font-bold mb-10 text-rose-600 hidden-on-load">Languages</h3>
-    <div class="flex justify-center gap-4 flex-wrap hidden-on-load">
-      <span class="px-4 py-2 bg-rose-100 text-rose-600 rounded-full">English - C1 (Advanced)</span>
-      <span class="px-4 py-2 bg-rose-100 text-rose-600 rounded-full">Spanish - Native</span>
-      <span class="px-4 py-2 bg-rose-100 text-rose-600 rounded-full">German - C1 (Advanced)</span>
+  <!-- SECCIÓN DE UBICACION -->
+  <section class="ubicacion" id="ubicacion">
+    <h2>Ubicación</h2>
+
+    <div class="ubicacion-grid">
+      <!-- MAPA -->
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.4462569877637!2d-0.8827677241074868!3d41.64609927126821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e5b78955e3%3A0xfbc9147bfb466cdb!2sC.%20de%20Francisco%20de%20Vitoria%2C%2050008%20Zaragoza%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sde!4v1759594051331!5m2!1ses!2sde" 
+          width="100%" height="400" style="border:0; border-radius:14px;" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- INFO UBICACION -->
+      <div class="info-ubicacion">
+        <p class="direccion">📍 Calle Francisco Vitoria, 3, <br> 
+          🏠 50008 Zaragoza, España</p>
+        <h3>Horario</h3>
+        <ul class="horario">
+          <li><strong>Lunes:</strong> 10:00 – 15:00</li>
+          <li><strong>Martes:</strong> 10:00 – 15:00</li>
+          <li><strong>Miércoles:</strong> 10:00 – 15:00</li>
+          <li><strong>Jueves:</strong> 10:00 – 15:00</li>
+          <li><strong>Viernes:</strong> 10:00 – 15:00</li>
+          <li><strong>Sábado:</strong> Cerrado</li>
+          <li><strong>Domingo:</strong> Cerrado</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-rose-100 py-20 px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6 text-rose-600 hidden-on-load">Contact</h3>
-    <p class="mb-6 hidden-on-load">Let’s connect and create something amazing together 💌</p>
-    <div class="flex justify-center space-x-6 hidden-on-load">
-      <a href="mailto:luciabeltrangonzalez@gmail.com" class="bg-white px-6 py-3 rounded-full shadow hover:bg-rose-100 transition">Email</a>
-      <a href="https://www.linkedin.com/in/lucia-gonzalez1" class="bg-white px-6 py-3 rounded-full shadow hover:bg-rose-100 transition">LinkedIn</a>
-    </div>
+  <!-- SECCIÓN DE SLOGAN -->
+  <section class="eslogan-final">
+    <p>✨ Transformamos tus ideas en realidad digital ✨</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 text-gray-400 text-sm">
-    © 2025 LUC.IA 🌸
+
+  <footer class="site-footer">
+    <p>Luc.IA - 2025</p>
   </footer>
 
-  <!-- Scroll Reveal Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hiddenElements = document.querySelectorAll(".hidden-on-load");
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show-on-scroll");
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-
-      hiddenElements.forEach(el => observer.observe(el));
-    });
-  </script>
+  <script src="menu.js"></script>
 </body>
 </html>
