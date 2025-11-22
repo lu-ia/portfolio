@@ -5,10 +5,14 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Luc.IA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="Luc.IA - Transformo tu empresa con tecnología. Digitalización, desarrollo web, análisis de datos y soluciones IT personalizadas.">
+  <meta name="author" content="Lucía González">
+  <meta name="theme-color" content="#0a0a0a">
 
+  <title>Luc.IA</title>
 </head>
+
 <body>
   <header class="top-nav">
     <nav aria-label="Navegación principal">
@@ -21,45 +25,49 @@
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#opiniones">Opiniones</a></li>
         <li><a href="#ubicacion">Ubicacion</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
 
     <!-- Reloj -->
     <div id="reloj"></div>
-</header>
   </header>
 
-  <main>
-    <section class="hero-section" id="inicio">
-    <div class="hero-text-large">
-    <h1>Transformo tu empresa con tecnología</h1>
-    <p class="slogan">Digitalización, innovación y análisis de datos para crecer y destacar</p>
-    <p>Ayudo a digitalizar tu empresa, crear páginas web profesionales, analizar datos y aprovechar la tecnología para transformar tu negocio e innovar en tu sector.</p>
-    </div>
-    </section>
-  </main>
+  <!-- PANTALLA INICIO HOME -->
+  <section class="hero-section" id="inicio">
+  <div class="hero-text-large">
+  <h1>Transformo tu empresa con tecnología</h1>
+  <p class="slogan">Digitalización, innovación y análisis de datos para crecer y destacar</p>
+  <p>Ayudo a digitalizar tu empresa, crear páginas web profesionales, analizar datos y aprovechar la tecnología para transformar tu negocio e innovar en tu sector.</p>
+  </div>
+  </section>
 
-  
-<!-- SECCION DE SERVICIOS-->
+<!-- SECCION DE SERVICIOS -->
   <section class="services-section" id="servicios">
     <div class="services-head">
       <div class="eyebrow">Servicios</div>
       <div>
-        <h2>Soluciones TI a medida para tu empresa</h2>
+        <h2>Soluciones IT a medida para tu empresa</h2>
         <p class="intro">Ayudamos a negocios a optimizar su tecnología y mejorar la productividad, con soporte continuo.</p>
       </div>
     </div>
 
+    <!-- SECCIÓN DE CARDS SERVICIOS -->
     <div class="cards">
       <!-- Auditoría y diagnóstico -->
-      <article class="card">
-        <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9 6h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M15 18h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <article class="card" aria-hidden="true">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-globe">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 0 20"/>
+            <path d="M12 2a15.3 15.3 0 0 0 0 20"/>
           </svg>
         </div>
+
         <div>
           <h3>Creación y modernización del sitio web</h3>
           <p>Modernizo tu página web, adaptada a tus necesidades y con un toque moderno y cómodo para tus clientes.</p>
@@ -68,12 +76,8 @@
 
       <!-- Procesos -->
       <article class="card">
-        <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M9 22v-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
         </div>
         <div>
           <h3>Agilización de procesos</h3>
@@ -84,9 +88,7 @@
       <!-- Soporte técnico -->
       <article class="card">
         <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L3 6v6c0 5 4 10 9 10s9-5 9-10V6l-9-4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
         </div>
         <div>
           <h3>Soporte técnico</h3>
@@ -97,9 +99,7 @@
       <!-- Desarrollo a medida -->
       <article class="card">
         <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake-icon lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
         </div>
         <div>
           <h3>Desarrollo a medida</h3>
@@ -110,9 +110,7 @@
       <!-- Migración a la nube -->
       <article class="card">
         <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 18a4 4 0 0 0 0-8 5 5 0 0 0-9.9 1A3.5 3.5 0 0 0 4 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-icon lucide-cloud"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
         </div>
         <div>
           <h3>Migración & Cloud</h3>
@@ -123,10 +121,7 @@
       <!-- Capacitación -->
       <article class="card">
         <div class="icon" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12 12v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-apple-icon lucide-apple"><path d="M12 6.528V3a1 1 0 0 1 1-1h0"/><path d="M18.237 21A15 15 0 0 0 22 11a6 6 0 0 0-10-4.472A6 6 0 0 0 2 11a15.1 15.1 0 0 0 3.763 10 3 3 0 0 0 3.648.648 5.5 5.5 0 0 1 5.178 0A3 3 0 0 0 18.237 21"/></svg>
         </div>
         <div>
           <h3>Capacitación & Workshops</h3>
@@ -136,7 +131,7 @@
     </div>
   </section>
   
-    <!-- Logo Slider -->
+  <!-- Logo Slider empresas -->
   <section class="logo-slider">
     <div class="logo-track">
       <div class="logo-slide"><img src="img/bosch.png" alt="Bosch"></div>
@@ -189,8 +184,12 @@
           </p>
 
           <div class="qualities">
-            <div class="quality">Experiencia internacional</div>
-            <div class="quality">Visión transformadora</div>
+            <a href="https://www.linkedin.com/in/lucia-gonzalez1/" target="_blank" class="quality">
+              Experiencia internacional
+            </a>
+            <a href="https://www.linkedin.com/in/lucia-gonzalez1/" target="_blank" class="quality">
+              Visión transformadora
+            </a>
           </div>
         </div>
       </div>
@@ -243,9 +242,10 @@
 
     <article class="proyecto-card">
       <h3>YUHUUU Brand</h3>
-       <a href="https://instagram.com/yuhuuu_brand" target="_blank" class="proyecto-link">🌸 Ver instagram</a> <br>
+      <a href="https://instagram.com/yuhuuu_brand" target="_blank" class="proyecto-link">🌸 Ver instagram</a> <br>
+      <a href="https://pinterest.com/yuhuuu_brand" target="_blank" class="proyecto-link">🌸 Ver pinterest</a> <br>
       <br><p>🎨 Asesoría y diseño web para marca de ropa creativa. <br>
-        📱 Gestión de redes sociales.  <br>
+        📱 Gestión de redes sociales. Pinterest (+120 mil vistas mensuales) <br>
         🛍️ Creación y gestión de tienda online (ETSY)
       </p>
      </article>
@@ -266,29 +266,6 @@
           ¡Excelente servicio! Lucía hizo la página web de mi empresa. Siempre que quiero añadir o cambiar algo, lo hace con rapidez y claridad.
           El resultado superó mis expectativas. Además, me sugirió algunas ideas para modernizar y agilizar algunos procesos de mi empresa.
           Muchas gracias Lucía.
-        </p>
-      </div>
-
-      <div class="opinion-card">
-        <h3 class="nombre">María Peláez</h3>
-        <p class="subtitulo">Jefa de salón de belleza y uñas</p>
-        <p class="fecha">12 de agosto de 2025</p>
-        <p class="reseña">
-          Lucía es muy profesional y trabajadora, a la vez que amable y cercana. 
-          Recomiendo totalmente su trabajo, cumple con los tiempos y ofrece calidad.
-          Me sorprendió su visión innovadora y la cantidad de ideas que tiene para mejorar.
-          Tenemos entre manos (nunca mejor dicho) nuevos proyectos, seguro que cada uno mejor que el anterior...
-        </p>
-      </div>
-
-      <div class="opinion-card">
-        <h3 class="nombre">Lucía</h3>
-        <p class="subtitulo">Creadora de RASMIA EQUIPO</p>
-        <p class="fecha">28 de junio de 2025</p>
-        <p class="reseña">
-          Me ayudó a impulsar mi proyecto desde cero. 
-          También me ayudó con las redes sociales y el sitio web. 
-          Estoy muy agradecida por el apoyo recibido.
         </p>
       </div>
 
@@ -315,15 +292,6 @@
         </p>
       </div>
 
-      <div class="opinion-card">
-        <h3 class="nombre">Inés</h3>
-        <p class="subtitulo">Empresario</p>
-        <p class="fecha">12 de septiembre de 2025</p>
-        <p class="reseña">
-          Muy profesionales. Recomiendo totalmente su trabajo, cumplen tiempos y ofrecen calidad.
-        </p>
-      </div>
-
     </div>
   </section>
 
@@ -334,37 +302,58 @@
     <div class="ubicacion-grid">
       <!-- MAPA -->
       <div class="mapa">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.4462569877637!2d-0.8827677241074868!3d41.64609927126821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e5b78955e3%3A0xfbc9147bfb466cdb!2sC.%20de%20Francisco%20de%20Vitoria%2C%2050008%20Zaragoza%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sde!4v1759594051331!5m2!1ses!2sde" 
-          width="100%" height="400" style="border:0; border-radius:14px;" 
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.716886820234!2d-1.000801!3d41.70504710000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd596e92cbc7e7ff%3A0xa1b500af8c33c984!2sCopycenterutebo!5e0!3m2!1ses!2sde!4v1763824349070!5m2!1ses!2sde" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
 
       <!-- INFO UBICACION -->
       <div class="info-ubicacion">
-        <p class="direccion">📍 Calle Francisco Vitoria, 3, <br> 
-          🏠 50008 Zaragoza, España</p>
+        <p class="direccion">📍 Avenida Buenos Aires, 16, <br> 
+          🏠 50180 Utebo, Zaragoza, España</p>
         <h3>Horario</h3>
         <ul class="horario">
-          <li><strong>Lunes:</strong> 10:00 – 15:00</li>
-          <li><strong>Martes:</strong> 10:00 – 15:00</li>
-          <li><strong>Miércoles:</strong> 10:00 – 15:00</li>
-          <li><strong>Jueves:</strong> 10:00 – 15:00</li>
-          <li><strong>Viernes:</strong> 10:00 – 15:00</li>
-          <li><strong>Sábado:</strong> Cerrado</li>
+          <li><strong>Lunes:</strong> 10:00 – 17:00 </li>
+          <li><strong>Martes:</strong> 10:00 – 17:00 </li>
+          <li><strong>Miércoles:</strong> 10:00 – 17:00 </li>
+          <li><strong>Jueves:</strong> 10:00 – 17:00 </li>
+          <li><strong>Viernes:</strong> 10:00 – 17:00 </li>
+          <li><strong>Sábado:</strong> 10:00 - 17:00 </li>
           <li><strong>Domingo:</strong> Cerrado</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN DE SLOGAN -->
-  <section class="eslogan-final">
-    <p> Me gusta estar cerca del negocio y entender el impacto que los datos tienen. </p>
-  </section>
+<section id="contacto" class="contact-section">
+  <h2>Contáctame</h2>
+  <p class="contact-subtitle">Dime cómo puedo ayudarte, te contactaré en menos de 24 horas.</p>
+  <form
+    action="https://formspree.io/f/movpgybo"
+    method="POST"
+  >
+    <label for="nombre">Nombre *</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+    <label for="empresa">Nombre de tu empresa o sitio web</label>
+    <input type="text" id="empresa" name="empresa" placeholder="Tu empresa o sitio web">
+
+    <label for="email">Correo electrónico *</label>
+    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+
+    <label for="mensaje">Mensaje *</label>
+    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
 
+  <!-- SECCIÓN DE FOOTER -->
   <footer class="site-footer">
     <p>Luc.IA - 2025</p>
   </footer>
