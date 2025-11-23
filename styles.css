@@ -200,7 +200,7 @@ nav{
 .about-section {
   padding: 60px 20px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 
 .about-card {
@@ -550,7 +550,7 @@ z-index: 1;
 
 *{box-sizing:border-box}
 html,body{height:100%}
-body{margin:0;background:var(--bg);color:var(--black);-webkit-font-smoothing:antialiased}
+body{margin:0;background:#ffeef5;color:var(--black);-webkit-font-smoothing:antialiased}
 
 .services-section{padding:20px 20px;max-width:1100px;margin:0 auto;position:relative}
 .services-head{display:flex;gap:24px;align-items:center;margin-bottom:28px}
@@ -558,7 +558,7 @@ body{margin:0;background:var(--bg);color:var(--black);-webkit-font-smoothing:ant
 h2{margin:0;font-size:28px;line-height:1.05;color:var(--black)}
 .intro{margin-top:12px;color:var(--muted);font-size:15px;max-width:780px}
 
-.cards{margin-top:38px;display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+.cards{margin-top:38px;margin-bottom:38px;display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.services-head{flex-direction:column;align-items:flex-start}.cards{grid-template-columns:1fr}}
 
@@ -881,4 +881,29 @@ img, video, iframe {
   color: #a83265; /* rosa más oscuro para subtítulo */
   margin-bottom: 1.5rem;
   font-weight: 500;
+}
+
+/* --- GRID DE 2 COLUMNAS PARA EL FORMULARIO --- */
+.contact-section form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 1.5rem; /* espacio vertical y horizontal */
+}
+
+/* Los elementos que deben ocupar 2 columnas */
+
+.contact-section button {
+  grid-column: span 2;
+}
+
+/* En móviles vuelve a una sola columna */
+@media (max-width: 720px) {
+  .contact-section form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section textarea,
+  .contact-section button {
+    grid-column: span 1;
+  }
 }
