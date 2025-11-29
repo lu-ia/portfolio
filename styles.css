@@ -117,6 +117,7 @@ nav{
     .hamburger{display:inline-flex;align-items:center;}
 }
 
+
 /* ---------------- CONTENIDO ---------------- */
 .page {
     min-height: 100vh;
@@ -1119,4 +1120,31 @@ img, video, iframe {
 .plan-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--card-shadow-dark);
+}
+
+@media (max-width:720px){
+    .menu{
+        background:#ffeef5 !important; /* rosa opaco */
+        backdrop-filter:none; 
+    }
+}
+
+.hamburger span {
+  display:block;
+  width:26px;
+  height:3px;
+  margin:5px;
+  background: var(--fucsia); /* ahora sí rosa fucsia */
+  border-radius:4px;
+}
+
+@media (max-width:720px){
+  .hero-text-large h1 {
+    display:none;
+  }
+}
+
+.avatar, .about-photo {
+  margin-left: auto;
+  margin-right: auto;
 }
