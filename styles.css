@@ -1138,10 +1138,10 @@ img, video, iframe {
   border-radius:4px;
 }
 
-@media (max-width:720px){
-  .hero-text-large h1 {
-    display:none;
-  }
+@media (max-width: 720px) {
+    .hero-text-large h1 {
+        display: none !important;
+    }
 }
 
 .avatar, .about-photo {
